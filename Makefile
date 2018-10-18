@@ -8,5 +8,5 @@ build: test
 	@docker build -t "theplant/alpine:$(VERSION)" .
 
 push: build
-	docker tag "theplant/alpine:$(VERSION)" "frankyue/alpine:$(VERSION)"
-	docker push "frankyue/alpine:$(VERSION)"
+	docker tag "theplant/alpine:$(VERSION)" "theplant/alpine:$(VERSION)"
+	docker push "theplant/alpine:$(VERSION)"
