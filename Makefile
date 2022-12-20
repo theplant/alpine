@@ -8,5 +8,5 @@ build: test
 	@docker build -t "theplant/alpine:$(VERSION)" .
 
 push: build
-	docker tag "theplant/alpine:$(VERSION)" "theplant/alpine:$(VERSION)"
-	docker push "theplant/alpine:$(VERSION)"
+	docker tag "theplant/alpine:$(VERSION)" "public.ecr.aws/theplant/alpine:$(VERSION)"
+	docker push "public.ecr.aws/theplant/alpine:$(VERSION)"
